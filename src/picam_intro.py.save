@@ -1,0 +1,31 @@
+from picamera import PiCamera
+from time import sleep
+
+class picam_iot:
+
+	def __init__(self, img_dir, vid_dir):
+		self.camera = PiCamera()
+		self.dir = dir
+	
+	def capture(self, name):
+		self.camera.start_preview()
+		self.camera.sleep(5)
+		self.camera.capture(self.dir+name)
+		camera.stop_preview()
+		print("Still image saved to",dir+name)
+
+	def take_video(self, name):
+		self.camera.start_preview()
+		self.camera.start_recording(self.vid_dir+name)
+		sleep(5)
+		self.camera.stop_recording()
+		self.camera.stop_preview()
+
+		
+	
+camera.start_preview()
+sleep(5)
+camera.capture('/home/pi/MBTLIN007/picam_getting_started/python_img.jpg')
+c
+
+
